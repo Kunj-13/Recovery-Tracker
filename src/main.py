@@ -14,10 +14,8 @@ from shared_functions import (
     list_entries, read_credentials, write_credentials, login, register_user
 )
 
-# Add these imports to the existing imports from user_module
 from user_module import (
     set_recovery_start_date, add_milestone, calculate_sobriety_length,
-    # other imported functions
 )
 
 from user_module import (
