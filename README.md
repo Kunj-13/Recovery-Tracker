@@ -7,9 +7,9 @@ The objective of our project is to develop a software application that aids in u
 **Key Objectives:**
 
 - Personal Recovery Monitoring: Implement features that allow users to record and monitor their daily recovery activities. This includes tracking sobriety milestones, journaling daily experiences, and noting any relapses or challenges. The main-8.py script in our application facilitates this by enabling users to add and view personal milestones and health metrics, offering a clear picture of their recovery journey over time.
-- **Health Metrics Visualization:** Provide tools for users to input and visualize various health metrics, such as mood, cravings, and overall wellbeing. This functionality, handled by user_module-3.py, helps users and their healthcare providers observe patterns and make informed decisions based on solid data.
+- **Health Metrics Visualization:** Provide tools for users to input and visualize various health metrics, such as mood, cravings, and overall wellbeing. This functionality, handled by user_module.py, helps users and their healthcare providers observe patterns and make informed decisions based on solid data.
 - **Secure and Private User Management:** Through the **admin_module.py**, our application ensures secure user registration and authentication processes, maintaining the confidentiality of personal and sensitive data. This is crucial for building trust and ensuring user comfort in sharing personal information.
-- **Accessibility and Ease of Use**: Design the application to be user-friendly, allowing users of all technological skill levels to easily navigate and utilize the various features without feeling overwhelmed. This is achieved by straightforward menu options and clear instructions within the application, as managed by the main control script main-8.py.
+- **Accessibility and Ease of Use**: Design the application to be user-friendly, allowing users of all technological skill levels to easily navigate and utilize the various features without feeling overwhelmed. This is achieved by straightforward menu options and clear instructions within the application, as managed by the main control script main.py.
 -**Support and Resources**: Apart from tracking and data visualization, provide users with access to educational resources and support options. This helps in not only managing their addiction but also understanding it better, fostering a comprehensive approach to recovery.
 
 ## Significance Of The Project
@@ -33,7 +33,7 @@ The significance of our project extends to its potential impact on families and 
    cd Recovery-Tracker
    ```
   
-#### Instructions to Use
+### Instructions to Use
 1. Start the application by running the main script. Make sure you are still in the project's root directory:
    ```bash
    python main.py
@@ -45,4 +45,34 @@ The significance of our project extends to its potential impact on families and 
 - **Navigate through the application:** Use the command line options to access different features such as adding milestones, updating personal information, or adding journal entries.
 - **Journal and Milestones:** Enter your daily experiences and track significant achievements as part of your recovery process.
 - **Health Metrics**: Regularly update and review health metrics as prompted by the application.
+
+## Structure of the Code
+
+Our application is structured around four main Python modules, each serving distinct roles within the system:
+
+1. **admin_module.py**
+- Purpose: Handles administrative functions related to user management.
+**Functions:**
+- register_user(): Registers a new user with their credentials and personal details.
+- display_users(): Lists all registered users.
+- list_entries(): Shows all journal entries for a specific user.
+2. **shared_functions.py**
+- Purpose: Provides utility functions that are used across the application.
+**Functions**:
+- hash_password(): Secures passwords by hashing them before storage.
+- read_credentials(), write_credentials(): Manages reading and writing user credentials to a file.
+3. **main.py**
+- Purpose: Acts as the entry point for the application, orchestrating user interactions and managing the application flow.
+**Main Functionality:**
+- Initiates the user interface.
+- Calls functions from other modules based on user input.
+4. **user_module.py**
+- Purpose: Manages functionalities specific to the user's personal data and recovery tracking.
+**Functions:**
+- update_user_info(): Updates personal information of the user.
+- add_personal_data(): Adds data related to the user’s recovery process.
+  
+### Interaction Between Modules
+**Data Flow:** main.py serves as the controller that uses functions from admin_module.py and user_module-3.py to handle data input and operations. All modules interact with shared_functions.py for data management and utility operations like hashing.
+**User Commands:** Users interact primarily through main-8.py, which directs commands to appropriate modules based on the operation (e.g., registering a user, adding journal entries).
 
