@@ -79,14 +79,14 @@ Our application is structured around four main Python modules, each serving dist
 ## Functionalities and Test Results
 
 ## Discussion and Conclusions
-## Strengths
+### Strengths
 ### Comprehensive Approach to Recovery Support
 - The application provides a well-rounded set of features, including personal milestone tracking, health metrics visualization, journaling, and access to educational resources, to support users in their recovery journey.
 ### User-Centric Design
 - The project emphasizes user-friendliness and privacy, making the application accessible to users of various technological backgrounds.
 ### Leveraging Data Structures and Algorithms
 - The project utilizes appropriate data structures and algorithms to store and manage user data efficiently, enhancing the application's functionality and responsiveness.
-## Limitations and Potential Improvements
+### Limitations and Potential Improvements
 ### Data Security and Encryption
 - The application could benefit from additional data encryption measures to protect the integrity and confidentiality of sensitive user information.
 ### Visualization and Analytics
