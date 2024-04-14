@@ -77,6 +77,7 @@ Our application is structured around four main Python modules, each serving dist
 **User Commands:** Users interact primarily through main-8.py, which directs commands to appropriate modules based on the operation (e.g., registering a user, adding journal entries).
 
 ## Functionalities and Test Results
+![image](https://github.com/Kunj-13/Recovery-Tracker/assets/43622669/1b7bbbe5-8535-45a4-9075-c1eabd92dc8a)
 
 ## Discussion and Conclusions
 ### Strengths
