@@ -76,3 +76,5 @@ Our application is structured around four main Python modules, each serving dist
 **Data Flow:** main.py serves as the controller that uses functions from admin_module.py and user_module-3.py to handle data input and operations. All modules interact with shared_functions.py for data management and utility operations like hashing.
 **User Commands:** Users interact primarily through main-8.py, which directs commands to appropriate modules based on the operation (e.g., registering a user, adding journal entries).
 
+## Structure of the Code
+
