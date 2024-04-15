@@ -120,7 +120,7 @@ After performing all the desired actions, the Admin can select option 5 to logou
 
 <img width="232" alt="Screenshot 2024-04-15 at 10 56 34 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/f87d91c3-6186-4213-80d0-cbd8fe796e57">
 
-## 2. Register User
+## 2. New User
 
 ### Test Procedure:
 Run the Recovery Tracker application. Choose "New User" to initiate the registration process. Input the required details for username, email, age, and password. Also, when you are typing the password no one can see what you are typing for secuirty reasons so type carefully.
@@ -137,7 +137,30 @@ A confirmation message is displayed upon successful registration.
 ### Backend Operation:
 **Register_user()** function in **Shared_functions.py** is invoked, which adds the new user to the credentials after validating the input and ensuring uniqueness.
 
+## 3. Returning Users
 
+### 3.1 Write New Entry
+Allows users to write and save a new journal entry documenting their daily experiences, feelings, and progress.
+
+**Test Procedure:**
+- Navigate to the "Write new entry" option.
+- Enter the title, mood, and content of the journal entry.
+- Confirm the entry is saved and correctly timestamped.
+
+<img width="902" alt="Screenshot 2024-04-15 at 1 46 46 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/fa333c92-96ea-4f25-8d1e-cb6e209d31a7">
+<img width="335" alt="Screenshot 2024-04-15 at 1 46 57 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/2e7992ed-1946-48ae-a9c4-92814cfe7945">
+
+### 3.2 Read an entry
+It allows users to retrieve and read journal entries from a specific date.
+
+**Test Procedure:**
+- Select the "Read an entry" function.
+- Input the date of the desired entry.
+- Verify that the correct entry is displayed.
+
+![image](https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/0e7bf633-2085-42bb-aa8c-e910def30391)
+
+### 3.3 
 ## Discussion 
 The development of the Recovery Tracker application has encountered several notable issues and limitations that need to be addressed. One primary concern is the application's data security and privacy measures, which rely on basic password hashing and leave the sensitive user information vulnerable to potential breaches. This challenge is closely tied to the course topic on Security and Protection. The team should explore more robust encryption and access control mechanisms to ensure the confidentiality and integrity of the user data.
 
