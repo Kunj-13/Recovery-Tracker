@@ -2,15 +2,21 @@
  
 ## Project Objectives
 
-The objective of our project is to develop a software application that aids in understanding, managing, and combating drug abuse and addiction. By leveraging data structures and algorithms, the application provides a user-friendly interface for individuals to record and track personal recovery milestones, monitor health metrics, and maintain a journal of their rehabilitation journey. This tool aims to support users in their recovery process by offering a structured way to visualize progress and setbacks, thus facilitating a better understanding of their personal addiction patterns.
+Our project aims to develop a comprehensive software application that supports individuals in understanding, managing, and overcoming drug abuse and addiction. We have created an application that combines robust data handling with a user-friendly interface to help in the rehabilitation process.
 
 **Key Objectives:**
 
-- Personal Recovery Monitoring: Implement features that allow users to record and monitor their daily recovery activities. This includes tracking sobriety milestones, journaling daily experiences, and noting any relapses or challenges. The main-8.py script in our application facilitates this by enabling users to add and view personal milestones and health metrics, offering a clear picture of their recovery journey over time.
-- **Health Metrics Visualization:** Provide tools for users to input and visualize various health metrics, such as mood, cravings, and overall wellbeing. This functionality, handled by user_module.py, helps users and their healthcare providers observe patterns and make informed decisions based on solid data.
-- **Secure and Private User Management:** Through the **admin_module.py**, our application ensures secure user registration and authentication processes, maintaining the confidentiality of personal and sensitive data. This is crucial for building trust and ensuring user comfort in sharing personal information.
-- **Accessibility and Ease of Use**: Design the application to be user-friendly, allowing users of all technological skill levels to easily navigate and utilize the various features without feeling overwhelmed. This is achieved by straightforward menu options and clear instructions within the application, as managed by the main control script main.py.
--**Support and Resources**: Apart from tracking and data visualization, provide users with access to educational resources and support options. This helps in not only managing their addiction but also understanding it better, fostering a comprehensive approach to recovery.
+- **Personal Recovery Monitoring:** Our application allows users to effectively monitor their personal recovery journey. Through our **main.py** script, users can log and review recovery milestones and daily experiences, including any challenges they face. This script is crucial for enabling users to add, view, and manage their recovery milestones and journal entries, offering an insightful overview of their progress.
+
+- **Health Metrics Visualization:** We are committed to providing actionable insights into users' health by tracking mood and cravings. Managed by our **user_module.py**, the application allows users to input and visualize these health metrics. This functionality not only helps users track their daily well-being but also equips healthcare providers with data to make informed treatment decisions.
+
+- **Secure and Private User Management:** Our **admin_module.py** is designed to ensure robust security and privacy protections. It handles user registration and authentication, maintaining the confidentiality of personal data. This module is integral to fostering a secure environment where users feel comfortable sharing sensitive information.
+
+- **Accessibility and Ease of Use:** The application is engineered to be accessible to all users, regardless of their tech-savviness. The main.py script provides a straightforward navigation system and clear instructions, making it easy for anyone to use the application without feeling overwhelmed.
+
+- **Support and Resources:** While primarily focused on tracking and data visualization, the application also includes motivational tips and recovery advice through user_module.py. These resources aim to educate users about addiction and support their recovery efforts, offering a well-rounded approach to rehabilitation.
+
+By focusing on these objectives, our project seeks to provide a structured tool that not only tracks recovery but also enhances the user's ability to understand and manage their addiction patterns effectively.
 
 ## Significance Of The Project
 
