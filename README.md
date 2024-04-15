@@ -137,25 +137,13 @@ A confirmation message is displayed upon successful registration.
 **Register_user()** function in **Shared_functions.py** is invoked, which adds the new user to the credentials after validating the input and ensuring uniqueness.
 
 
-## Discussion and Conclusions
-### Strengths
-1. **Comprehensive Approach to Recovery Support**
-- The application provides a well-rounded set of features, including personal milestone tracking, health metrics visualization, journaling, and access to educational resources, to support users in their recovery journey.
-2. **User-Centric Design**
-- The project emphasizes user-friendliness and privacy, making the application accessible to users of various technological backgrounds.
-3. **Leveraging Data Structures and Algorithms**
-- The project utilizes appropriate data structures and algorithms to store and manage user data efficiently, enhancing the application's functionality and responsiveness.
-### Limitations and Potential Improvements
-1. **Data Security and Encryption**
-- The application could benefit from additional data encryption measures to protect the integrity and confidentiality of sensitive user information.
-2. **Visualization and Analytics**
-- Enhancing the data visualization capabilities, such as graphs and trend analysis, could help users better understand their recovery patterns and progress.
-3. **Connectivity and Integration**
-- Incorporating features that allow users to connect with support groups, healthcare providers, or other recovery resources could further enhance the application's value and user experience.
-### Application of Course Learnings
-1. **Data Structures and Algorithms**
-- The project utilizes appropriate data structures and algorithms to store and manage user data efficiently.
-2. **Modular Design**
-- The separation of concerns into distinct modules promotes code maintainability, testability, and scalability.
-3. **User Interface and Experience**
-- The project emphasizes user-friendliness and accessibility, demonstrating the application of UI/UX design best practices.
+## Discussion 
+The development of the Recovery Tracker application has encountered several notable issues and limitations that need to be addressed. One primary concern is the application's data security and privacy measures, which rely on basic password hashing and leave the sensitive user information vulnerable to potential breaches. This challenge is closely tied to the course topic on Security and Protection. The team should explore more robust encryption and access control mechanisms to ensure the confidentiality and integrity of the user data.
+
+Another limitation is the lack of comprehensive data visualization and reporting tools, which is related to the course topics on File-System and I/O Systems. The current focus on data collection and storage does not provide users with the necessary insights to effectively interpret their recovery progress over time. By leveraging their understanding of file management and input/output systems, the team can incorporate interactive visualizations, trend analysis, and personalized insights to significantly enhance the application's value.
+
+The application's lack of customization and personalization options, which offers a one-size-fits-all approach, is linked to the course topic on Distributed Systems. Enabling greater user customization and personalization would improve the application's user-friendliness and foster a stronger sense of ownership and engagement among the users. The team can apply their knowledge of distributed systems to develop a more flexible and adaptable application architecture that supports personalization features.
+## Conclusion 
+In the process of developing the Recovery Tracker application, the team has leveraged various course learnings from CMPSC 472, including topics related to Operating System Structure, File-System, I/O Systems, Security and Protection, and Distributed Systems. These course learnings have been instrumental in addressing the identified issues and limitations, enabling the team to transform the Recovery Tracker into a more comprehensive and effective tool for supporting individuals in their quest for long-term recovery and improved well-being.
+
+Regarding Operating System Structure, the team's understanding of file management and offline functionality has been applied to enhance the application's resilience and accessibility, ensuring users can access the application and their data even in areas with limited internet connectivity. The team's knowledge of File-System and I/O Systems has been crucial in incorporating robust data visualization and reporting capabilities, empowering users to interpret their recovery progress more effectively. Additionally, the team's insights into Security and Protection have informed the development of more secure data storage and access control mechanisms, safeguarding the sensitive user information. Finally, the team's understanding of Distributed Systems has guided the creation of a flexible and adaptable application architecture, supporting greater customization and personalization options for users.
