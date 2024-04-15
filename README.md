@@ -77,7 +77,65 @@ Our application is structured around four main Python modules, each serving dist
 **User Commands:** Users interact primarily through main-8.py, which directs commands to appropriate modules based on the operation (e.g., registering a user, adding journal entries).
 
 ## Functionalities and Test Results
-![image](https://github.com/Kunj-13/Recovery-Tracker/assets/43622669/1b7bbbe5-8535-45a4-9075-c1eabd92dc8a)
+Our Recovery Tracker application is designed to be an interactive tool for users and administrators to monitor and manage the recovery process from drug abuse and addiction. Below is an extensive overview of the application's functionalities and the test results to verify its performance.
+
+## 1. Admin Login
+### Test Procedure:
+Log in as an admin. Select "View User Info" from the admin menu.
+Enter the username of the account you wish to view.
+
+### Expected Result:
+The selected user's information is displayed, including username, email, and age.
+
+<img width="378" alt="Screenshot 2024-04-15 at 10 35 24 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/a7061cea-f774-42d1-a0ca-27e1362668b5">
+
+### Backend Operation:
+**Admin_view_user_info()** function in **admin_module.py** retrieves and displays the user's details from the stored credentials.
+
+## 1.1 Admin Actions
+After the Admin logs in, it opens a whole new door of our application. It allows users to perform several functions such as:-
+
+### Create a new user
+When Admin presses 1, it allows the admin to create a user after entering all of the new users information.
+
+<img width="372" alt="Screenshot 2024-04-15 at 10 42 19 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/ae7c6141-d04a-4ffc-8c5a-57efcb0652d5">
+
+### View User info
+When Admin presses option 2, our application provides admin with all the users names in our system they want to see their information of. After entering a certain user, it provides full list of all of that user's information. 
+
+<img width="408" alt="Screenshot 2024-04-15 at 10 43 46 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/42dff422-203d-4ce1-ab99-d533645502d6">
+
+### Delete a User
+When the Admin selects the option 3, it allows them to delete a certain user after entering the information of the user they want to delete. 
+
+<img width="522" alt="Screenshot 2024-04-15 at 10 51 00 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/286a3d9c-66fd-491a-bf15-15fc661795d8">
+
+### View User Journals
+When the Admin selects the option 4, the application allows the user to see any specific diary entry from any users in our system.
+
+<img width="926" alt="Screenshot 2024-04-15 at 10 54 34 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/856c7ea8-49b1-4435-9df1-f409b5744b68">
+
+### Logout
+After performing all the desired actions, the Admin can select option 5 to logout of the system.
+<img width="232" alt="Screenshot 2024-04-15 at 10 56 34 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/f87d91c3-6186-4213-80d0-cbd8fe796e57">
+
+## 2. Register User
+
+### Test Procedure:
+Run the Recovery Tracker application. Choose "New User" to initiate the registration process. Input the required details for username, email, age, and password. Also, when you are typing the password no one can see what you are typing for secuirty reasons so type carefully.
+
+<img width="376" alt="Screenshot 2024-04-15 at 10 10 36 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/65776c12-cb45-4f38-ac81-8ca1a0d5a727">
+<img width="386" alt="Screenshot 2024-04-15 at 10 29 48 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/a80524e4-5b50-4c8e-9b06-37d17ce44fe6">
+<img width="692" alt="Screenshot 2024-04-15 at 10 31 09 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/c8ee6e03-7fe5-4a7f-9c5d-c519d195276e">
+
+
+### Expected Result:
+A new user account is created with the given details.
+A confirmation message is displayed upon successful registration.
+
+### Backend Operation:
+**Register_user()** function in **Shared_functions.py** is invoked, which adds the new user to the credentials after validating the input and ensuring uniqueness.
+
 
 ## Discussion and Conclusions
 ### Strengths
