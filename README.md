@@ -117,6 +117,7 @@ When the Admin selects the option 4, the application allows the user to see any 
 
 ### Logout
 After performing all the desired actions, the Admin can select option 5 to logout of the system.
+
 <img width="232" alt="Screenshot 2024-04-15 at 10 56 34 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/f87d91c3-6186-4213-80d0-cbd8fe796e57">
 
 ## 2. Register User
