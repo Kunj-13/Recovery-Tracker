@@ -333,7 +333,8 @@ This action terminates the user's session and clears any temporary data related 
 ## 4 Log out
 **Instruction:**
 After the user is logged out, they can select "Log Out" by pressing 4 to logout of the whole application to end their session.
-![image](https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/26b0541a-c69e-46b6-873f-62f878ea6582)
+
+<img width="370" alt="Screenshot 2024-04-15 at 5 51 01 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/d68ba24b-f586-41a8-b203-6eb729b4b0a6">
 
 **Expected Result:**
 The application is terminated and a message is displayed of "Logging out of the program. Goodbye!".
