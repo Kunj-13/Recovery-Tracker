@@ -288,6 +288,7 @@ Today's health metrics are logged into your account, with a message confirming t
 ### 3.12 Get Recovery Tips
 **Instruction:**
 Choose "Get Recovery Tips" from the menu by entering 12, and the system will automatically provide personalized tips by using your log metrics of the day. It gives personalized tips according to your log metrics. These are two examples below:-
+
 <img width="308" alt="Screenshot 2024-04-15 at 5 38 21 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/79642a7c-db71-4446-b6c6-f291b91931dd">
 <img width="673" alt="Screenshot 2024-04-15 at 5 38 29 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/febc2661-9df0-4b68-a3e7-620c1b763d97">
 
