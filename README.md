@@ -142,25 +142,115 @@ A confirmation message is displayed upon successful registration.
 ### 3.1 Write New Entry
 Allows users to write and save a new journal entry documenting their daily experiences, feelings, and progress.
 
-**Test Procedure:**
-- Navigate to the "Write new entry" option.
-- Enter the title, mood, and content of the journal entry.
-- Confirm the entry is saved and correctly timestamped.
+**Instrutions:**
+- Run the Recovery Tracker application.
+- Select "Returning User" and log in with your credentials.
+- Choose "Write new entry" by entering 1 from the user menu.
+- Input the title, your current mood, and the content of your journal entry when prompted.
 
 <img width="902" alt="Screenshot 2024-04-15 at 1 46 46 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/fa333c92-96ea-4f25-8d1e-cb6e209d31a7">
 <img width="335" alt="Screenshot 2024-04-15 at 1 46 57 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/2e7992ed-1946-48ae-a9c4-92814cfe7945">
 
+**Expected Result:**
+- A new journal entry is created under your username with the provided details. A confirmation message "Journal entry saved" is displayed.
+
+**Backend Operation:**
+- The **write_entry()** function in **user_module.py** is called. This function prompts for entry details and appends the information to a text file representing the user's journal for the current date.
+
 ### 3.2 Read an entry
 It allows users to retrieve and read journal entries from a specific date.
 
-**Test Procedure:**
-- Select the "Read an entry" function.
-- Input the date of the desired entry.
-- Verify that the correct entry is displayed.
+**Instructions:**
+- After logging in, select "Read an entry" by entering 2 from the user menu.
+- Enter the date of the journal entry you wish to read in the specified format.
 
 ![image](https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/0e7bf633-2085-42bb-aa8c-e910def30391)
 
-### 3.3 
+**Expected Result:**
+- The content of the journal entry for the given date is displayed. If no entry exists for that date, a message stating "No entries found for this date" is shown.
+
+**Backend Operation:**
+- The **read_entry()** function searches the user's journal directory for an entry file matching the date provided and displays its contents if found.
+
+### 3.3 View Mood Statistics
+
+**Instructions:**
+- From the main menu, select "View mood statistics" by entering 3 after logging in.
+- The application will process and display statistics without any additional input.
+  
+<img width="492" alt="Screenshot 2024-04-15 at 4 33 33 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/34ce43d5-b53d-4cc8-9725-a8a891b2ab97">
+
+**Expected Result:**
+A summary of mood occurrences in your journal entries is displayed, such as "Happy: 5 time(s)".
+
+**Backend Operation:**
+**View_mood_statistics()** in **user_module.py** analyzes the mood information from all journal entries and provides a count of each mood type.
+
+### 3.4 Search entries
+
+**Instructions:**
+Select "Search entries" by entering 4 and when prompted, input a keyword you would like to search for in your journal entries.
+
+<img width="255" alt="Screenshot 2024-04-15 at 4 36 21 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/a2893b2f-9cce-4ef0-af8d-9a4aeedf3a57">
+<img width="1042" alt="Screenshot 2024-04-15 at 4 36 48 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/f2e2acae-c720-4121-b02b-0837cb0f6c41">
+
+**Expected Result:**
+Entries containing the keyword are listed with their titles and dates.
+If no entries contain the keyword, "No entries found with that keyword" is displayed.
+**Backend Operation:**
+**Search_entries()** looks through the user's journal entries for the keyword and displays each matching entry.
+
+### 3.5 List all entries
+
+**Instructions:**
+Choose "List all entries" from the menu by entering 5. No additional input is needed.
+
+<img width="393" alt="Screenshot 2024-04-15 at 4 42 24 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/e92f81a3-29e1-47c8-afc1-c8dd17f8a817">
+
+**Expected Result:**
+All journal entries for the user are listed by date and title.
+**Backend Operation:**
+**List_entries()** in **shared_functions.py** compiles a list of all journal entry filenames for the user, presenting them in an organized manner.
+
+### 3.6 Delete an entry
+
+**Instrutions:**
+Log in and select "Delete an entry" by typing 6. You'll be prompted to enter the date of the entry you want to delete.
+
+<img width="517" alt="Screenshot 2024-04-15 at 4 50 11 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/fde80a79-1bd5-4307-91af-175a90fb15f0">
+
+**Expected Result:**
+The specified entry is deleted, and "Entry for the specific date you entered is deleted" confirms the action.
+**Backend Operation:**
+**Delete_user_entry()** in **user_module.py** removes the specified file from the user's journal directory.
+
+### 3.7 Delete your account
+
+**Instructions:**
+Inside the user menu, choose "Delete your account" and confirm your decision when prompted.
+<img width="692" alt="Screenshot 2024-04-15 at 10 31 09 AM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/c8ee6e03-7fe5-4a7f-9c5d-c519d195276e">
+<img width="372" alt="Screenshot 2024-04-15 at 5 00 38 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/cb6a40eb-4b30-4758-b36a-3b5d892761a1">
+<img width="722" alt="Screenshot 2024-04-15 at 5 01 48 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/997e2c7c-a022-4438-8f37-2d6efc6e6ac9">
+
+**Expected Result:**
+The user's account and all associated data are permanently removed, with a message confirming the deletion.
+**Backend Operation:**
+**Delete_own_account()** from **user_module.py** erases the user's credentials and journal entries from the system.
+
+### 3.8 Set Recovery Start Date
+
+**Instruction:**
+From the user options, select "Set Recovery Start Date" and input the date when prompted.
+
+<img width="408" alt="Screenshot 2024-04-15 at 5 08 06 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/a744b76b-9cbd-470e-bf9b-5950665e983a">
+<img width="640" alt="Screenshot 2024-04-15 at 5 08 23 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/24be1928-cae0-45a7-833f-028ad1528e74">
+
+**Expected Result:**
+The user's recovery start date is updated in the system, with a confirmation message.
+**Backend Operation:**
+**Set_recovery_start_date()** updates the user's credentials with the specified start date for recovery tracking.
+
+### 3.9 
 ## Discussion 
 The development of the Recovery Tracker application has encountered several notable issues and limitations that need to be addressed. One primary concern is the application's data security and privacy measures, which rely on basic password hashing and leave the sensitive user information vulnerable to potential breaches. This challenge is closely tied to the course topic on Security and Protection. The team should explore more robust encryption and access control mechanisms to ensure the confidentiality and integrity of the user data.
 
