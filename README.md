@@ -250,7 +250,94 @@ The user's recovery start date is updated in the system, with a confirmation mes
 **Backend Operation:**
 **Set_recovery_start_date()** updates the user's credentials with the specified start date for recovery tracking.
 
-### 3.9 
+### 3.9 Add Milestone
+**Instruction:**
+Choose "Add Milestone" from the menu by entering 9, then input the description and date for the milestone.
+
+<img width="1077" alt="Screenshot 2024-04-15 at 5 22 20 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/a5d08a67-15ea-4a74-afde-6e53cb648bbb">
+<img width="915" alt="Screenshot 2024-04-15 at 5 22 33 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/93911302-7ddc-4a95-8762-4529bc85715d">
+
+**Expected Result:**
+The milestone is added to the user's account, confirmed by a success message.
+**Backend Operation:**
+**Add_milestone()** records the milestone in the user's credentials file under their account information.
+
+### 3.10 View Sobriety Length
+**Test Procedure:**
+Log in and select "View Sobriety Length" to automatically calculate and display the duration of sobriety based on the start date.
+
+<img width="243" alt="Screenshot 2024-04-15 at 5 28 30 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/5d1c2943-b4a5-43f6-8ee1-95b41b4a803a">
+
+**Expected Result:**
+The length of sobriety in days is displayed to the user.
+**Backend Operation:**
+**Calculate_sobriety_length()** computes the difference between the current date and the recovery start date.
+
+### 3.11 Log Health Metrics
+**Test Procedure:**
+Select "Log Health Metrics" by entering 11 and input your current mood and craving levels when prompted. These log metrics are used for other features in our program.
+
+<img width="260" alt="Screenshot 2024-04-15 at 5 31 40 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/c08a185b-1899-4093-8c9e-2e1dec246519">
+<img width="874" alt="Screenshot 2024-04-15 at 5 32 05 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/f324183e-d135-4e7a-acce-4a3bdba6b00d">
+
+**Expected Result:**
+Today's health metrics are logged into your account, with a message confirming the log.
+**Backend Operation:**
+**Log_health_metrics()** captures and stores the user's self-reported health data in their credentials file.
+
+### 3.12 Get Recovery Tips
+**Instruction:**
+Choose "Get Recovery Tips" from the menu by entering 12, and the system will automatically provide personalized tips by using your log metrics of the day. It gives personalized tips according to your log metrics. These are two examples below:-
+<img width="308" alt="Screenshot 2024-04-15 at 5 38 21 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/79642a7c-db71-4446-b6c6-f291b91931dd">
+<img width="673" alt="Screenshot 2024-04-15 at 5 38 29 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/febc2661-9df0-4b68-a3e7-620c1b763d97">
+
+
+**Expected Result:**
+Tips and suggestions for recovery are displayed based on the latest health metrics.
+**Backend Operation:**
+**get_recovery_tips()** analyzes the most recent health metrics and offers tailored advice to the user.
+
+### 3.13 Access Motivational Resources
+**Instruction:**
+Users can opt for "Access Motivational Resources" from the menu to get motivational content recommendations by entering 13 which will give reccomendations based on recovery period.
+
+<img width="643" alt="Screenshot 2024-04-15 at 5 41 32 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/ab0c4f8c-f90a-4361-9d90-183962713705">
+
+**Expected Result:**
+Suggestions for motivational resources, such as articles or videos, are presented to the user.
+**Backend Operation:**
+**access_motivational_resources()** assesses the user's progress and suggests resources accordingly.
+
+### 3.14 Display Recovery Progress
+**Instructions**
+From the menu, users can select "Display Recovery Progress" to view a comprehensive report of their recovery journey.
+<img width="1071" alt="Screenshot 2024-04-15 at 5 44 08 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/f452f568-acb0-4bb8-9a80-cabf3cdbff9d">
+
+**Expected Result:**
+A detailed view of the user's milestones, sobriety length, and health metrics is shown.
+**Backend Operation:**
+**display_user_details()** compiles and displays data from various parts of the user's account to provide an overview of their recovery progress.
+
+### 3.15 Logout
+
+**Instruction:**
+Select "Log Out" to end your session with the application.
+
+<img width="379" alt="Screenshot 2024-04-15 at 5 49 53 PM" src="https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/acb836f0-8fab-46e5-b251-49891eceb55a">
+
+**Expected Result:**
+The user is logged out, and the application returns to the main role selection menu.
+**Backend Operation:**
+This action terminates the user's session and clears any temporary data related to the session.
+
+## 4 Log out
+**Instruction:**
+After the user is logged out, they can select "Log Out" by pressing 4 to logout of the whole application to end their session.
+![image](https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/26b0541a-c69e-46b6-873f-62f878ea6582)
+
+**Expected Result:**
+The application is terminated and a message is displayed of "Logging out of the program. Goodbye!".
+
 ## Discussion 
 The development of the Recovery Tracker application has encountered several notable issues and limitations that need to be addressed. One primary concern is the application's data security and privacy measures, which rely on basic password hashing and leave the sensitive user information vulnerable to potential breaches. This challenge is closely tied to the course topic on Security and Protection. The team should explore more robust encryption and access control mechanisms to ensure the confidentiality and integrity of the user data.
 
