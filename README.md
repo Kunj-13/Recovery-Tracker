@@ -10,7 +10,7 @@ Our project aims to develop a comprehensive software application that supports i
 
 - **Health Metrics Visualization:** We are committed to providing actionable insights into users' health by tracking mood and cravings. Managed by our **user_module.py**, the application allows users to input and visualize these health metrics. This functionality not only helps users track their daily well-being but also equips healthcare providers with data to make informed treatment decisions.
 
-- **Secure and Private User Management:** Our **admin_module.py** is designed to ensure robust security and privacy protections. It handles user registration and authentication, maintaining the confidentiality of personal data. This module is integral to fostering a secure environment where users feel comfortable sharing sensitive information.
+- **Secure and Private User Management:** Our **admin_module.py** is designed to ensure robust security and privacy protections. It handles user registration and authentication, maintaining the confidentiality of personal data. This module is essential to fostering a secure environment where users feel comfortable sharing sensitive information.
 
 - **Accessibility and Ease of Use:** The application is engineered to be accessible to all users, regardless of their tech-savviness. The **main.py** script provides a straightforward navigation system and clear instructions, making it easy for anyone to use the application without feeling overwhelmed.
 
