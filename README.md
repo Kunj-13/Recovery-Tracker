@@ -12,7 +12,7 @@ Our project aims to develop a comprehensive software application that supports i
 
 - **Secure and Private User Management:** Our **admin_module.py** is designed to ensure robust security and privacy protections. It handles user registration and authentication, maintaining the confidentiality of personal data. This module is integral to fostering a secure environment where users feel comfortable sharing sensitive information.
 
-- **Accessibility and Ease of Use:** The application is engineered to be accessible to all users, regardless of their tech-savviness. The main.py script provides a straightforward navigation system and clear instructions, making it easy for anyone to use the application without feeling overwhelmed.
+- **Accessibility and Ease of Use:** The application is engineered to be accessible to all users, regardless of their tech-savviness. The **main.py** script provides a straightforward navigation system and clear instructions, making it easy for anyone to use the application without feeling overwhelmed.
 
 - **Support and Resources:** While primarily focused on tracking and data visualization, the application also includes motivational tips and recovery advice through user_module.py. These resources aim to educate users about addiction and support their recovery efforts, offering a well-rounded approach to rehabilitation.
 
