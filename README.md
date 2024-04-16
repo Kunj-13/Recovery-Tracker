@@ -2,7 +2,7 @@
  
 ## Project Objectives
 
-Our project aims to develop a comprehensive software application that supports individuals in understanding, managing, and overcoming drug abuse and addiction. We have created an application that combines robust data handling with a user-friendly interface to help in the rehabilitation process.
+Our project aims to develop a comprehensive software application that supports individuals in understanding, managing, and overcoming drug abuse and addiction. We have created an application that combines robust data handling with a user-friendly interface to help the rehabilitation process.
 
 **Key Objectives:**
 
