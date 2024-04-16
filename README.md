@@ -77,7 +77,9 @@ Our application is structured around four main Python modules, each serving dist
 **Functions:**
 - update_user_info(): Updates personal information of the user.
 - add_personal_data(): Adds data related to the user’s recovery process.
-  
+
+![Recovery_Tracker_UML](https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/617c82a0-4d13-4211-9392-33f7e4df7619)
+
 ### Interaction Between Modules
 **Data Flow:** main.py serves as the controller that uses functions from admin_module.py and user_module-3.py to handle data input and operations. All modules interact with shared_functions.py for data management and utility operations like hashing.
 **User Commands:** Users interact primarily through main-8.py, which directs commands to appropriate modules based on the operation (e.g., registering a user, adding journal entries).
