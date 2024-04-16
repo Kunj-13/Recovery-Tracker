@@ -59,24 +59,44 @@ Our application is structured around four main Python modules, each serving dist
 1. **admin_module.py**
 - Purpose: Handles administrative functions related to user management.
 **Functions:**
-- register_user(): Registers a new user with their credentials and personal details.
-- display_users(): Lists all registered users.
-- list_entries(): Shows all journal entries for a specific user.
+- admin_exists(): Checks if the admin account already exists in the credentials.
+- create_admin_account(): Creates an admin account if it doesn't exist.
+- admin_create_user(): Allows the admin to create a new user account.
+- admin_view_user_info(): Allows the admin to view user information.
+- admin_view_user_journal(): Allows the admin to view user journals.
+- delete_user(): Allows the admin to delete a user account.
 2. **shared_functions.py**
 - Purpose: Provides utility functions that are used across the application.
 **Functions**:
-- hash_password(): Secures passwords by hashing them before storage.
-- read_credentials(), write_credentials(): Manages reading and writing user credentials to a file.
+- hash_password(): Hashes a password using SHA-256 for secure storage.
+- read_credentials(): Reads the user credentials from a JSON file.
+- write_credentials(): Writes updated credentials back to the JSON file.
+- login(): Handles user login by checking entered credentials against stored ones.
+- register_user(): Registers a new user, ensuring unique username and email.
+- display_users(): Displays a list of all registered users.
+- list_entries(): Lists all journal entries for a specific user.
 3. **main.py**
 - Purpose: Acts as the entry point for the application, orchestrating user interactions and managing the application flow.
 **Main Functionality:**
 - Initiates the user interface.
 - Calls functions from other modules based on user input.
+- print_menu(): Prints a menu with the given options and a title.
 4. **user_module.py**
 - Purpose: Manages functionalities specific to the user's personal data and recovery tracking.
 **Functions:**
-- update_user_info(): Updates personal information of the user.
-- add_personal_data(): Adds data related to the user’s recovery process.
+- write_entry(): Allows a user to write a new journal entry.
+- read_entry(): Allows a user to read a journal entry from a specific date.
+- delete_user_entry(): Allows a user to delete a specific journal entry.
+- view_mood_statistics(): Computes and displays statistics about the user's journal entries, particularly the mood.
+- search_entries(): Allows a user to search for journal entries that contain a specific keyword.
+- set_recovery_start_date(): Allows a user to set their recovery start date.
+- calculate_sobriety_length(): Calculates the user's sobriety length based on the recovery start date.
+- add_milestone(): Allows a user to add a new milestone to their recovery progress.
+- log_health_metrics(): Allows a user to log their daily mood and cravings.
+- get_recovery_tips(): Provides personalized recovery tips based on the user's latest health metrics.
+- access_motivational_resources(): Provides access to motivational resources based on the user's recovery stage.
+- display_user_details(): Displays the user's recovery start date, milestones, and health metrics.
+- delete_own_account(): Allows a user to delete their own account.
 
 ![Recovery_Tracker_UML](https://github.com/Kunj-13/Recovery-Tracker/assets/143433713/617c82a0-4d13-4211-9392-33f7e4df7619)
 
